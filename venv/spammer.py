@@ -9,14 +9,13 @@ a = 1
 control = True
 while control:
     b = str(a)
-    # its loop limit
-    if a == 6:
+    if a == 6: # loop limit
         break
-    for x in 'spam bot yaptım':
+    for x in "hey, this is spam":
         Keyboard.press(x)
         Keyboard.release(x)
     a+=1
-    time.sleep(0.5)
+    time.sleep(0.5) # message time per second || 0.5 = 500ms  
     Keyboard.press(Key.enter)
     Keyboard.release(Key.enter)
 
