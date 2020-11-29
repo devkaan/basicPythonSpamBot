@@ -6,9 +6,9 @@ import time
 Keyboard = Controller()
 time.sleep(sec)
 a = 1
+spamLimit = 10
 while true:
-    b = str(a)
-    if a == 6: # loop limit
+    if a == spamLimit: # loop limit
         break
     for x in "hey, this is spam":
         Keyboard.press(x)
